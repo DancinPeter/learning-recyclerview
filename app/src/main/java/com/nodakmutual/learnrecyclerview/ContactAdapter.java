@@ -19,6 +19,7 @@ public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ViewHold
 
     // Constructor class creates the adapter and passses in what we will need from our Fragment
     public ContactAdapter(List<Contact> contacts) {
+
         this.contacts = contacts;
     }
 
