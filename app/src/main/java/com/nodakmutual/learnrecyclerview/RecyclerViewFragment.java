@@ -39,7 +39,11 @@ public class RecyclerViewFragment extends Fragment {
         // Don't forget to set the manager on your RecyclerView!
         recyclerContacts.setLayoutManager(layoutManager);
 
+        //Create data (from below)
         List<Contact> contacts = mockContacts();
+
+        //Set the contents to the data that was created
+        recyclerContacts.setAdapter(new ContactAdapter(contacts));
 
     }
 
@@ -47,10 +51,15 @@ public class RecyclerViewFragment extends Fragment {
         // Creates a list of Contacts and fills them up with data
         List<Contact> contacts = new ArrayList<>();
         contacts.add(new Contact("Sam", "Front of the class"));
-        contacts.add(new Contact("Sam", "Front of the class"));
-        contacts.add(new Contact("Susie", "Back of the class"));
+        contacts.add(new Contact("Alex", "Front of the class"));
+        contacts.add(new Contact("Brandin", "Back of the class"));
         contacts.add(new Contact("Susie", "Back of the class"));
         contacts.add(new Contact("Bernice", "Not even in this class"));
+        contacts.add(new Contact("Trent", "Back of the class"));
+        contacts.add(new Contact("Nicki", "Back of the class"));
+        contacts.add(new Contact("Al", "Back of the class"));
+        contacts.add(new Contact("Francine", "Back of the class"));
+
 
         return contacts;
     }
